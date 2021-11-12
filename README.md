@@ -1,7 +1,7 @@
-# ChromeOS theme
+# MateriaSoft
 
-ChromeOS is a [Material Design](https://material.io) theme for GNOME/GTK based desktop environments.
-Based on nana-4 -- [materia-theme](https://github.com/nana-4/materia-theme)
+MateriaSoft is a [Material Design](https://material.io) theme for GNOME/GTK based desktop environments.
+[Original](https://github.com/vinceliuice/ChromeOS-theme) based on nana-4 -- [materia-theme](https://github.com/nana-4/materia-theme)
 
 Modified to unify dark colors in the dark gtk themes.
 
@@ -26,43 +26,14 @@ Run the following commands in the terminal:
 ./install.sh
 ```
 
-> Tip: `./install.sh` allows the following options:
+> `./install.sh` allows the following options:
 
 ```
 -d, --dest DIR          Specify destination directory (Default: /usr/share/themes)
--n, --name NAME         Specify theme name (Default: ChromeOS)
+-n, --name NAME         Specify theme name (Default: MateriaSoft)
 -c, --color VARIANT...  Specify color variant(s) [standard|dark|light] (Default: All variants)
 -s, --size VARIANT      Specify size variant [standard|compact] (Default: All variants)
 -h, --help              Show help
 ```
 
 > For more information, run: `./install.sh --help`
-
-## Install from Snap
-<a href="https://snapcraft.io/chromeos-themes">
-<img alt="Get it from the Snap Store" src="https://snapcraft.io/static/images/badges/en/snap-store-white.svg" />
-</a>
-
-You can install the theme from the Snap Store оr by running:
-
-```
-sudo snap install chromeos-themes
-```
-To connect the theme to an app run:
-```
-sudo snap connect [other snap]:gtk-3-themes chromeos-themes:gtk-3-themes
-```
-
-To connect the theme to all apps which have available plugs to gtk-common-themes you can run:
-
-``` for i in $(snap connections | grep gtk-common-themes:gtk-3-themes | awk '{print $2}'); do sudo snap connect $i chromeos-themes:gtk-3-themes; done
-```
-
-## Firefox theme
-[Intall Firefox theme](src/firefox)
-
-![01](src/firefox/preview01.png?raw=true)
-![02](src/firefox/preview02.png?raw=true)
-
-## Preview
-![1](https://cdn.pling.com/img/9/2/b/e/0f3bbcad86f2b4baee71ca3f12117ebf4d5a.jpg?raw=true)

@@ -14,7 +14,7 @@ else
   DEST_DIR="$HOME/.themes"
 fi
 
-THEME_NAME=ChromeOS
+THEME_NAME=MateriaSoft
 COLOR_VARIANTS=('' '-dark' '-light')
 SIZE_VARIANTS=('' '-compact')
 
@@ -72,7 +72,7 @@ install() {
   echo "[Desktop Entry]" >>                                                     "${THEME_DIR}/index.theme"
   echo "Type=X-GNOME-Metatheme" >>                                              "${THEME_DIR}/index.theme"
   echo "Name=$name$color$size" >>                                               "${THEME_DIR}/index.theme"
-  echo "Comment=An Materia Gtk+ theme based on Elegant Design" >>               "${THEME_DIR}/index.theme"
+  echo "Comment=An elegant Gtk+ theme based on Material Design" >>		"${THEME_DIR}/index.theme"
   echo "Encoding=UTF-8" >>                                                      "${THEME_DIR}/index.theme"
   echo "" >>                                                                    "${THEME_DIR}/index.theme"
   echo "[X-GNOME-Metatheme]" >>                                                 "${THEME_DIR}/index.theme"
